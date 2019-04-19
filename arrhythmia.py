@@ -33,7 +33,7 @@ from sklearn import datasets, linear_model
 from sklearn.metrics import confusion_matrix
 from sklearn.utils.multiclass import unique_labels
 from sklearn import svm, datasets
-from keras.utils import plot_model
+
 #dataset
 
 label = os.listdir("/home/dell/ecg/dataset_image")
@@ -115,7 +115,6 @@ with open("model.json", "w") as json_file:
 # serialize weights to HDF5
 model.save_weights("model.h5")
 
-#plot_model(model, to_file='model.png')
 
 """
 # load json and create model

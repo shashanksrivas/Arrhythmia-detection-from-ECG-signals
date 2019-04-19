@@ -32,6 +32,7 @@ for e in paths:
             diff2 = abs(y - beats[j])//2
             Normal.append(signals[beats[j] - diff1: beats[j] + diff2, 0])
 #print(Normal)
+
 signals1=[]
 for item in signals:
     for item2 in item:
